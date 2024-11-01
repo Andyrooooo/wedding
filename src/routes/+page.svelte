@@ -21,7 +21,7 @@
 
 	<div class="flex justify-center gap-2 mt-8 text-xs">
 		<p class="uppercase">October 17, 2025</p>
-		<a class="fa-solid fa-circle text-[5px] pt-[11px]"></a>
+		<a class="fa-solid fa-circle text-[5px] pt-[7px]"></a>
 		<p class="uppercase">Park City, Utah</p>
 		
 	</div>
