@@ -11,6 +11,16 @@ export default {
 		extend: {
 			fontFamily: {
 				cursive: ['Cedarville Cursive', 'cursive'],
+				proper: ['Roboto Serif', 'serif']
+			},
+			colors: {
+				'rust': '#6C2D1C',
+				'beige': '#CDC6BD',
+			},
+			transitionDelay: {
+				600: '600ms',
+				800: '800ms',
+				900: '900ms',
 			},
 		},
 	},
