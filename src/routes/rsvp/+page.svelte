@@ -26,7 +26,7 @@
 
     onMount(async () => {
         // await delay(2000)
-        const res = await fetch('/testPeople')
+        const res = await fetch('/people')
         if (res.ok) {
             let data = await res.json();
             // Sort by last_name, then first_name

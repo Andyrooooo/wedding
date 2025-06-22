@@ -19,7 +19,7 @@
 
     onMount(async () => {
         // await delay(2000)
-        const res = await fetch('/testPeople')
+        const res = await fetch('/people')
         if (res.ok) {
             people = await res.json()
         }
