@@ -312,12 +312,12 @@ class:translate-y-0={rsvp}
 
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12">
                         <div class="grid gap-1">
-                            <img src="storycbcnp.png" alt="Drew and Emma at white sands" class="object-cover w-full"/>
-                            <img src="storyrmnp2.png" alt="Drew and Emma selfie at the rockies" class="object-cover w-full rounded-bl-2xl"/>
+                            <img src="storycbcnp.png" alt="Drew and Emma at white sands" class="object-cover w-full" loading="lazy"/>
+                            <img src="storyrmnp2.png" alt="Drew and Emma selfie at the rockies" class="object-cover w-full rounded-bl-2xl" loading="lazy"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storygmnp.png" alt="Drew and Emma at Capitol Reef" class="object-cover w-full rounded-tr-2xl"/>
-                            <img src="storywsnp.png" alt="Drew and Emma in the caverns" class="object-cover w-full"/>
+                            <img src="storygmnp.png" alt="Drew and Emma at Capitol Reef" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
+                            <img src="storywsnp.png" alt="Drew and Emma in the caverns" class="object-cover w-full" loading="lazy"/>
                         </div>
                     </div>
                     <!-- <div bind:this={sectionRef1}></div> -->
@@ -342,12 +342,12 @@ class:translate-y-0={rsvp}
                 <div class="md:flex gap-4 items-center">
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12 ">
                         <div class="grid gap-1">
-                            <img src="storyhawaii2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
-                            <img src="storyhawaii3.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-bl-2xl"/>
+                            <img src="storyhawaii2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full" loading="lazy"/>
+                            <img src="storyhawaii3.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full rounded-bl-2xl" loading="lazy"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storyhawaii.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-tr-2xl"/>
-                            <img src="storyhawaii4.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
+                            <img src="storyhawaii.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
+                            <img src="storyhawaii4.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full" loading="lazy"/>
                         </div>
                     </div>
                     <!-- <div bind:this={sectionRef2}></div> -->
