@@ -31,10 +31,12 @@
     <!-- navigation bar -->
     <div class="m-4 p-4 bg-black/40 rounded-2xl backdrop-blur-lg shadow-lg border border-white/20 xl:mx-auto max-w-[1200px]">
         <!-- regular menu -->
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <a href="/" class="bg-beige rounded-md hover:bg-beige/40 transition-all duration-500 cursor-pointer">
                 <img src="weddingIcon2.png" alt="Wedding Icon" class="h-[35px] w-[55px] rounded-md"/>
             </a>
+
+            <p class="font-cursive text-white font-bold text-2xl lg:hidden">D + E</p>
         
             <div
             on:click={() => hamburgerOpened = !hamburgerOpened}
@@ -97,7 +99,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:delay-500={hamburgerOpened}
         >
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a >Home</a>
+                Home
             </div>
         </a>
 
@@ -107,7 +109,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-600={hamburgerOpened}>
             <div class="p-4 text-light-rust hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a>RSVP</a>
+                RSVP
             </div>
         </a>
 
@@ -117,7 +119,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-600={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a>The Big Day</a>
+                The Big Day
             </div>
         </a>
     
@@ -127,7 +129,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-700={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a>Registry</a>
+                Registry
             </div>
         </a>
         
@@ -137,7 +139,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-800={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a>FAQs</a>
+                FAQs
             </div>
         </a>
     
@@ -148,7 +150,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:delay-900={hamburgerOpened}
         >
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                <a>Our Memories</a>
+                Our Memories
             </div>
         </a>
     
@@ -160,15 +162,15 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         >
             {#if currentPath.startsWith('/admin')}
             <a href="/logout" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                <p class="">logout</p>
+                logout
             </a>
             {:else if isLoggedIn}
                 <a href="/logout" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                    <p class="">logout</p>
+                    logout
                 </a>
             {:else}
                 <a href="/login" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                    <p class="">login</p>
+                    login
                 </a>
             {/if}
         </div>
