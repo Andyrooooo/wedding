@@ -310,14 +310,14 @@ class:translate-y-0={rsvp}
                         <p class="w-4/5 mx-auto">Next came Capitol Reef, a park that surprised us with its quiet beauty and wide open spaces—another hidden gem we got to share together.</p>
                     </div>
 
-                    <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12 h-[400px] lg:h-[500px]">
+                    <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12">
                         <div class="grid gap-1">
-                            <img src="storyrmnp2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
-                            <img src="storywsnp.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-bl-2xl"/>
+                            <img src="storycbcnp.png" alt="Drew and Emma at white sands" class="object-cover w-full"/>
+                            <img src="storyrmnp2.png" alt="Drew and Emma selfie at the rockies" class="object-cover w-full rounded-bl-2xl"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storycbcnp.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full rounded-tr-2xl h-full"/>
-                            <img src="storygmnp.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
+                            <img src="storygmnp.png" alt="Drew and Emma at Capitol Reef" class="object-cover w-full rounded-tr-2xl"/>
+                            <img src="storywsnp.png" alt="Drew and Emma in the caverns" class="object-cover w-full"/>
                         </div>
                     </div>
                     <!-- <div bind:this={sectionRef1}></div> -->
