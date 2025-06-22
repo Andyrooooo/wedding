@@ -15,7 +15,14 @@ export default {
 			},
 			colors: {
 				'rust': '#6C2D1C',
+				'light-rust': '#ED6C49',
 				'beige': '#CDC6BD',
+				'green': '#7E876E',
+				'nude': '#BBA497',
+				'terracotta': '#A9573C',
+				'graphGreen': '#16A34A',
+				'graphRed': '#DC2626',
+				'graphOrange': '#EA580C',
 			},
 			transitionDelay: {
 				600: '600ms',
