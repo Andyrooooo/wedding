@@ -253,10 +253,10 @@ class:translate-y-0={rsvp}
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12">
                         <div class="grid gap-1">
                             <img src="story2.png" alt="Drew and Emma in front of the Bison" class="object-cover w-full" loading="lazy"/>
-                            <img src="story4.png" alt="Old faithful Geyser" class="object-cover w-full  rounded-bl-2xl" loading="lazy"/>
+                            <img src="story4.png" alt="Yellowstone National Park Sign" class="object-cover w-full  rounded-bl-2xl" loading="lazy"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="story6.png" alt="Yellowstone National Park Sign" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
+                            <img src="story6.png" alt="Old faithful Geyser" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
                             <img src="story7.png" alt="Drew and Emma taking a selfie next to the waterfall" class="object-cover w-full" loading="lazy"/>
                         </div>
                     </div>
@@ -279,12 +279,12 @@ class:translate-y-0={rsvp}
                 >
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12 ">
                         <div class="grid gap-1">
-                            <img src="storysnp.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full"/>
-                            <img src="storysnp2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full  rounded-bl-2xl"/>
+                            <img src="storysnp.png" alt="General Sherman Sequoia Tree" class="object-cover w-full" loading="lazy"/>
+                            <img src="storysnp2.png" alt="Sequoia National Park Sign" class="object-cover w-full  rounded-bl-2xl" loading="lazy"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storybcnp.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full rounded-tr-2xl h-full"/>
-                            <img src="storybcnp2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
+                            <img src="storybcnp.png" alt="Bryce Canyon National Park Sign" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
+                            <img src="storybcnp2.png" alt="Drew and Emma on a trail" class="object-cover w-full" loading="lazy"/>
                         </div>
                     </div>
                     <!-- <div bind:this={sectionRef2}></div> -->
