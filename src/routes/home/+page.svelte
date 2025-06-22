@@ -162,7 +162,7 @@ class:translate-y-0={countdown}
 <!-- Drew and RSVP -->
 <div 
 bind:this={rsvpRef}
-class="h-screen flex flex-col md:flex-row md:gap-4 mx-4 transform opacity-0 -translate-y-4 transition-all duration-700 delay-300  font-proper xl:mx-auto max-w-[1200px]"
+class="md:h-screen flex flex-col md:flex-row md:gap-4 mx-4 transform opacity-0 -translate-y-4 transition-all duration-700 delay-300  font-proper xl:mx-auto max-w-[1200px]"
 class:opacity-100={rsvp}
 class:translate-y-0={rsvp}
 >
@@ -176,7 +176,7 @@ class:translate-y-0={rsvp}
         </div>
     </div>
 
-    <div class="h-full md:basis-5/12">
+    <div class="h-[400px] md:h-full md:basis-5/12">
         <img src="rsvp.png" alt="drew looking through a glass dome" class="h-full object-cover md:w-full mb-4 rounded-2xl aspect-[16/9]"/>
     </div>
 
