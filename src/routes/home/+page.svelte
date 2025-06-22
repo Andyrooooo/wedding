@@ -283,8 +283,8 @@ class:translate-y-0={rsvp}
                             <img src="storysnp2.png" alt="Sequoia National Park Sign" class="object-cover w-full  rounded-bl-2xl" loading="lazy"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storybcnp.png" alt="Bryce Canyon National Park Sign" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
-                            <img src="storybcnp2.png" alt="Drew and Emma on a trail" class="object-cover w-full" loading="lazy"/>
+                            <img src="storybcnp2.png" alt="Drew and Emma on a trail" class="object-cover w-full rounded-tr-2xl" loading="lazy"/>
+                            <img src="storybcnp.png" alt="Bryce Canyon National Park Sign" class="object-cover w-full" loading="lazy"/>
                         </div>
                     </div>
                     <!-- <div bind:this={sectionRef2}></div> -->
@@ -342,11 +342,11 @@ class:translate-y-0={rsvp}
                 <div class="md:flex gap-4 items-center">
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12 ">
                         <div class="grid gap-1">
-                            <img src="storyhawaii.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
-                            <img src="storyhawaii2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-bl-2xl"/>
+                            <img src="storyhawaii2.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
+                            <img src="storyhawaii3.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-bl-2xl"/>
                         </div>
                         <div class="grid gap-1">
-                            <img src="storyhawaii3.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full rounded-tr-2xl h-full"/>
+                            <img src="storyhawaii.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full rounded-tr-2xl"/>
                             <img src="storyhawaii4.png" alt="Drew and Emma at Arches National Park" class="object-cover w-full h-full"/>
                         </div>
                     </div>
