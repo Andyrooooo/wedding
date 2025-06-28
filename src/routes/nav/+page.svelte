@@ -27,7 +27,7 @@
 
 
 <!-- background -->
-<div class="fixed top-0 left-0 w-full z-[10]">
+<div class="fixed top-0 left-0 w-full z-[20]">
     <!-- navigation bar -->
     <div class="m-4 p-4 bg-black/40 rounded-2xl backdrop-blur-lg shadow-lg border border-white/20 xl:mx-auto max-w-[1200px]">
         <!-- regular menu -->
