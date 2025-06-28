@@ -32,17 +32,17 @@
     <section class="grid grid-cols-2 md:grid-cols-3 gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full" src="arches/IMG_0054.png" />
+                <img class="h-auto max-w-full" src="arches/1.webp" />
             </div>
         </div>
          <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full" src="arches/IMG_0055.png" alt="" />
+                <img class="h-auto max-w-full" src="arches/2.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full" src="arches/IMG_1441.png" alt="" />
+                <img class="h-auto max-w-full" src="arches/3.webp" alt="" />
             </div>
         </div>
     </section>
@@ -58,27 +58,27 @@
     <section class="grid grid-cols-2 md:grid-cols-3  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="yellowstone/1.png" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/1.webp" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="yellowstone/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/2.webp" alt="" />
             </div>
             
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="yellowstone/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="yellowstone/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="yellowstone/5.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="yellowstone/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yellowstone/6.webp" alt="" />
             </div>
         </div>
 
@@ -95,35 +95,35 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="yosemite/1.png" />
+                <img class="h-auto max-w-full object-cover" src="yosemite/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="yosemite/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="yosemite/2.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="sequoia/1.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="sequoia/1.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="sequoia/2.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="sequoia/3.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="sequoia/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="sequoia/2.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="yosemite/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="sequoia/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="yosemite/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="sequoia/4.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="yosemite/3.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="yosemite/4.webp" alt="" />
             </div>
         </div>
 
@@ -140,27 +140,27 @@
     <section class="grid grid-cols-2 md:grid-cols-3  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="joshua/1.png" />
+                <img class="h-auto max-w-full object-cover" src="joshua/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="joshua/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="joshua/2.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="joshua/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="joshua/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="joshua/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="joshua/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="joshua/5.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="joshua/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="joshua/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="joshua/6.webp" alt="" />
             </div>
         </div>
 
@@ -178,34 +178,34 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/1.png" />
+                <img class="h-auto max-w-full object-cover" src="bryce/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/2.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-auto max-w-full object-cover" src="bryce/3.png" alt="" />
-            </div>
-            <div>
-                <img class="h-auto max-w-full object-cover" src="bryce/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="bryce/2.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/5.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="bryce/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="bryce/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/7.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="bryce/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="bryce/8.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="bryce/6.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="bryce/7.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="bryce/8.webp" alt="" />
             </div>
         </div>
     </section>
@@ -223,85 +223,85 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/1.png" />
+                <img class="h-auto max-w-full object-cover" src="rocky/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/2.png" alt="" />
-            </div>
-
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-auto max-w-full object-cover" src="rocky/3.png" alt="" />
-            </div>
-            <div>
-                <img class="h-auto max-w-full object-cover" src="rocky/4.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/5.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/6.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/7.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/8.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/9.png" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/10.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/2.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/11.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/12.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/13.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="rocky/14.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/15.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/16.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/6.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/17.png" />
+                <img class="h-auto max-w-full object-cover" src="rocky/7.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="rocky/18.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/8.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/9.webp" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/10.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="rocky/19.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/11.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="rocky/20.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="rocky/12.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/13.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/14.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/15.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/16.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/17.webp" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/18.webp" alt="" />
+            </div>
+
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/19.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="rocky/20.webp" alt="" />
             </div>
         </div>
     </section>
@@ -317,43 +317,43 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="white/1.png" />
+                <img class="h-auto max-w-full object-cover" src="white/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="white/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="white/2.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="white/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="white/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="white/4.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="guadalupe/1.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="guadalupe/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="white/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="guadalupe/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="guadalupe/1.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="guadalupe/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="guadalupe/2.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto md:h-full max-w-full object-cover" src="carlesbad/1.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="guadalupe/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto md:h-full max-w-full object-cover" src="carlesbad/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="guadalupe/4.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto md:h-full max-w-full object-cover" src="carlesbad/1.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto md:h-full max-w-full object-cover" src="carlesbad/2.webp" alt="" />
             </div>
         </div>
     </section>
@@ -370,18 +370,18 @@
     <section class="grid grid-cols-2 gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="capitol/1.png" />
+                <img class="h-auto max-w-full object-cover" src="capitol/1.webp" />
             </div>
             <div class="">
-                <img class="h-full max-w-full object-cover" src="capitol/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="capitol/2.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div class="">
-                <img class="h-full max-w-full object-cover" src="capitol/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="capitol/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="capitol/4.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="capitol/4.webp" alt="" />
             </div>
         </div>
     </section>
@@ -397,52 +397,52 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/1.png" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/1.webp" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/2.webp" alt="" />
             </div>
             
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/4.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/5.png" alt="" />
-            </div>
-            <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/7.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/8.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/6.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/9.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/7.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/10.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/8.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="hawaii/9.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="hawaii/10.webp" alt="" />
             </div>
         </div>
 
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/11.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/11.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="hawaii/12.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="hawaii/12.webp" alt="" />
             </div>
         </div>
 
@@ -460,51 +460,51 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/1.png" />
+                <img class="h-auto max-w-full object-cover" src="std/1.webp" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/2.webp" alt="" />
             </div>
             
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/4.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-auto max-w-full object-cover" src="std/5.png" alt="" />
-            </div>
-            <div>
-                <img class="h-auto max-w-full object-cover" src="std/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/7.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/8.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-auto max-w-full object-cover" src="std/9.png" alt="" />
-            </div>
-            <div>
-                <img class="h-auto max-w-full object-cover" src="std/10.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/6.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/11.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/7.webp" alt="" />
             </div>
             <div>
-                <img class="h-auto max-w-full object-cover" src="std/12.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="std/8.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="std/9.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="std/10.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="std/11.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="std/12.webp" alt="" />
             </div>
         </div>
     </section>
@@ -520,35 +520,35 @@
     <section class="grid grid-cols-2 md:grid-cols-4  gap-2">
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/1.png" />
+                <img class="h-auto max-w-full object-cover" src="wi/1.webp" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/2.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="wi/2.webp" alt="" />
             </div>
 
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/3.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="wi/3.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/4.png" alt="" />
-            </div>
-        </div>
-        <div class="grid gap-2">
-            <div>
-                <img class="h-full max-w-full object-cover" src="wi/5.png" alt="" />
-            </div>
-            <div>
-                <img class="h-full max-w-full object-cover" src="wi/6.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="wi/4.webp" alt="" />
             </div>
         </div>
         <div class="grid gap-2">
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/7.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="wi/5.webp" alt="" />
             </div>
             <div>
-                <img class="h-full max-w-full object-cover" src="wi/8.png" alt="" />
+                <img class="h-auto max-w-full object-cover" src="wi/6.webp" alt="" />
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div>
+                <img class="h-auto max-w-full object-cover" src="wi/7.webp" alt="" />
+            </div>
+            <div>
+                <img class="h-auto max-w-full object-cover" src="wi/8.webp" alt="" />
             </div>
         </div>
     </section>
