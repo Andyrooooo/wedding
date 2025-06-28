@@ -32,9 +32,13 @@
     <div class="m-4 p-4 bg-black/40 rounded-2xl backdrop-blur-lg shadow-lg border border-white/20 xl:mx-auto max-w-[1200px]">
         <!-- regular menu -->
         <div class="flex justify-between items-center">
-            <a href="/" class="bg-beige rounded-md hover:bg-beige/40 transition-all duration-500 cursor-pointer">
-                <img src="weddingIcon2.png" alt="Wedding Icon" class="h-[35px] w-[55px] rounded-md"/>
-            </a>
+            <div class="lg:flex gap-4 lg:items-center">
+                <a href="/" class="bg-beige rounded-md hover:bg-beige/40 transition-all duration-500 cursor-pointer block">
+                    <img src="weddingIcon2.png" alt="Wedding Icon" class="h-[35px] w-[55px] rounded-md"/>
+                </a>
+
+                <p class="font-cursive text-white font-bold text-2xl hidden lg:block lg:text-sm">D + E</p>
+            </div>
 
             <p class="font-cursive text-white font-bold text-2xl lg:hidden">D + E</p>
         
