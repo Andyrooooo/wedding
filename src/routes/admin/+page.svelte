@@ -319,12 +319,17 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
                     >
                         <!-- Icon for small screens -->
                         <i class={`fa-solid ${tab.icon} block md:hidden text-xl `}></i>
+
+                        <span in:fade={{ duration: 600 }} class="hidden md:block lg:hidden text-base font-bold"><i class={`fa-solid ${tab.icon} mr-2`}></i>{tab.label}</span>
+                        
                         <!-- Text for medium and up -->
-                        {#if guestInfo}
-                            <i class={`fa-solid ${tab.icon}`}></i>
-                        {:else}
-                            <span in:fade={{ duration: 600 }} class="hidden md:block text-base font-bold"><i class={`fa-solid ${tab.icon} mr-2`}></i>{tab.label}</span>
-                        {/if}
+                        <div class="hidden lg:block ">
+                            {#if guestInfo}
+                                <i class={`fa-solid ${tab.icon}`}></i>
+                            {:else}
+                                <span in:fade={{ duration: 600 }} class="text-base font-bold"><i class={`fa-solid ${tab.icon} mr-2`}></i>{tab.label}</span>
+                            {/if}
+                        </div>
                     </button>
                 {/each}
                 <!-- Moving underline indicator -->
@@ -339,7 +344,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
         <div class="lg:w-full {guestInfo ? 'lg:w-4/12' : ''} transition-all duration-300">
             <!--------------- active guest list -------------------->
             {#if activeIndex === 0}
-                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
+                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full lg:px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
                     <p class="font-proper mb-4">
                         Total Guests:
                         {#if !people.length}
@@ -410,7 +415,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
 
             <!--------------- attending list ------------------->
             {:else if activeIndex === 1}
-                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
+                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full lg:px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
 
                     <p class="font-proper mb-4">
                         Total Attending Guests:
@@ -484,7 +489,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
 
             <!---------------- active not attending list --------------------->
             {:else if activeIndex === 2}
-                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
+                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full lg:px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
                     <p class="font-proper mb-4">
                         Total Not Attending:
                         {#if !people.length}
@@ -563,7 +568,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
 
             <!------------------ active unresponsive list -------------------->
             {:else if activeIndex === 3}
-                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
+                <div class="mt-4 lg:mt-0 {guestInfo ? 'lg:w-full lg:px-0' : 'lg:w-4/5 px-4'} mx-auto transition-all duration-300">
                     <p class="font-proper mb-4">
                         Total Unresponsive Guests:
                         {#if !people.length}
@@ -721,7 +726,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
 
 
 <!----------- Guest Info Panel ---------------->
-    <div class="backdrop-blur-lg {guestInfo ? 'h-4/5 opacity-100 lg:w-6/12' : 'h-0 opacity-0 h-0 lg:w-0'} lg:h-4/5 fixed bottom-0 left-0 lg:left-auto lg:right-0 w-full bg-black/40  z-20 lg:z-[4] border-t lg:border-l border-white/20 rounded-t-2xl lg:rounded-t-none lg:rounded-tl-2xl px-4 transition-all duration-300 font-proper ease-in-out">
+    <div class="{guestInfo ? 'h-4/5 opacity-100 lg:w-6/12' : 'h-0 opacity-0 h-0 lg:w-0'} lg:h-4/5 fixed bottom-0 left-0 lg:left-auto lg:right-0 w-full bg-black  z-20 lg:z-[4] border-t lg:border-l border-white/20 rounded-t-2xl lg:rounded-t-none lg:rounded-tl-2xl px-4 transition-all duration-300 font-proper ease-in-out">
         <div class="flex flex-col justify-between h-full relative">
 
             <div>
@@ -780,7 +785,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
                             guestInfo = false;
                             currentGuestInfo = null;
                         }}
-                        class="text-center w-full rounded-md text-white font-bold px-4 py-2 hover:bg-black bg-black/80 transition-all duration-300 border border-white/10"
+                        class="text-center w-full rounded-md text-white font-bold px-4 py-2 hover:bg-white/20 bg-black/80 transition-all duration-300 border border-white/10"
                         >
                         Cancel
                         </button>
