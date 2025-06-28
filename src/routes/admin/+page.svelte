@@ -721,7 +721,7 @@ $: filteredUnresponsiveList = unresponsivePersonToFind.trim() === ''
 
 
 <!----------- Guest Info Panel ---------------->
-    <div class="{guestInfo ? 'h-4/5 opacity-100 lg:w-6/12' : 'h-0 opacity-0 h-0 lg:w-0'} lg:h-4/5 fixed bottom-0 left-0 lg:left-auto lg:right-0 w-full bg-black/40 backdrop-blur-lg z-20 lg:z-[4] border-t lg:border-l border-white/20 rounded-t-2xl lg:rounded-t-none lg:rounded-tl-2xl px-4 transition-all duration-300 font-proper ease-in-out">
+    <div class="backdrop-blur-lg {guestInfo ? 'h-4/5 opacity-100 lg:w-6/12' : 'h-0 opacity-0 h-0 lg:w-0'} lg:h-4/5 fixed bottom-0 left-0 lg:left-auto lg:right-0 w-full bg-black/40  z-20 lg:z-[4] border-t lg:border-l border-white/20 rounded-t-2xl lg:rounded-t-none lg:rounded-tl-2xl px-4 transition-all duration-300 font-proper ease-in-out">
         <div class="flex flex-col justify-between h-full relative">
 
             <div>
