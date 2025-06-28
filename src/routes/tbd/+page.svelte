@@ -76,7 +76,7 @@
 <!-- hero section -->
 <div class="h-screen relative  overflow-hidden">
     <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-[2]"></div>
-    <img src="bigDay.jpg" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full"/>
+    <img src="bigDay.webp" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full"/>
     
     <div class="absolute bottom-0 left-0 w-full z-[3] text-5xl lg:text-7xl text-center transition-all duration-300">
         <div class="pt-12 pb-[6rem] relative text-white">

@@ -70,7 +70,7 @@
 <!-- hero section -->
 <div class="h-screen relative">
     <div class="absolute top-0 left-0 w-full h-full bg-black z-[2] opacity-40"></div>
-    <img src="homeHero3.png" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full" loading="lazy"/>
+    <img src="homeHero3.webp" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full" loading="lazy"/>
     <!-- <img src="homeHero3.png" alt="Drew and Emma at the lake in colorado" class="relative z-[2] h-full object-cover w-full opacity-90"/> -->
     <!-- <video
         src="heroVid6.mp4"

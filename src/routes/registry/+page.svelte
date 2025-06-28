@@ -12,7 +12,7 @@ import AnimatedLine from '../../lib/animatedLine.svelte';
 <!-- hero section -->
 <div class="h-screen relative  overflow-hidden">
     <div class="absolute top-0 left-0 w-full h-full bg-black z-[2] opacity-40"></div>
-    <img src="registry-hero.jpg" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full"/>
+    <img src="registry-hero.webp" alt="Drew and Emma at the lake in colorado" class="relative z-[1] h-full object-cover w-full"/>
     
     <div class="absolute bottom-0 left-0 w-full z-[3] text-5xl lg:text-7xl text-center transition-all duration-300">
         <div class="pt-12 pb-[6rem] relative text-white">

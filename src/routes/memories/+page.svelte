@@ -12,7 +12,7 @@
 <!-- hero section -->
 <div class="h-screen relative  overflow-hidden mb-20">
     <div class="absolute top-0 left-0 w-full h-full bg-black z-[1]"></div>
-    <img src="memories_hero.png" alt="Emma at the National Park Beach" class="relative z-[2] h-full object-cover w-full opacity-50" loading="lazy"/>
+    <img src="memories_hero.webp" alt="Emma at the National Park Beach" class="relative z-[2] h-full object-cover w-full opacity-50" loading="lazy"/>
     
     <div class="absolute bottom-0 left-0 w-full z-[3] text-5xl lg:text-7xl text-center transition-all duration-300">
         <div class="pt-12 pb-[6rem] relative text-white">
