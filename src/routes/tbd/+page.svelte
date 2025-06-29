@@ -172,7 +172,7 @@
     </div>
 
     <div class="relative overflow-y-scroll scrollbar-hide h-full p-4 pb-8">
-        <img src="bigDay2.jpg" alt="Wedding Ceremony" class="w-full h-64 object-cover rounded-md mb-4">
+        <img src="bigDay2.webp" alt="Wedding Ceremony" class="w-full h-64 object-cover rounded-md mb-4">
         <div class="font-proper text-center ">
             <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
             <p class="text-black/80 text-sm">Friday, October 17, 2025</p>
@@ -202,7 +202,7 @@
 
         <!-- Scrollable Content -->
         <div class="relative overflow-y-scroll scrollbar-hide flex-1 px-4 pt-4">
-            <img src="bigDay2.jpg" alt="Wedding Ceremony" class="w-full h-full object-cover rounded-md mb-4">
+            <img src="bigDay2.webp" alt="Wedding Ceremony" class="w-full h-full object-cover rounded-md mb-4">
             <div class="font-proper text-center ">
                 <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
                 <p class="text-black/80 text-sm">Friday, October 17, 2025</p>

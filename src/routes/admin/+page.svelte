@@ -34,7 +34,7 @@
     }
 
     onMount(async () => {
-        const res = await fetch('/testPeople');
+        const res = await fetch('/people');
         if (res.ok) {
             let data = await res.json();
             data.sort((a, b) => {
