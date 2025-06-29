@@ -27,18 +27,14 @@
 
 
 <!-- background -->
-<div class="fixed top-0 left-0 w-full z-[20]">
+<div class="fixed top-0 left-0 w-full z-[10]">
     <!-- navigation bar -->
     <div class="m-4 p-4 bg-black/40 rounded-2xl backdrop-blur-lg shadow-lg border border-white/20 xl:mx-auto max-w-[1200px]">
         <!-- regular menu -->
         <div class="flex justify-between items-center">
-            <div class="lg:flex gap-4 lg:items-center">
-                <a href="/" class="bg-beige rounded-md hover:bg-beige/40 transition-all duration-500 cursor-pointer block">
-                    <img src="weddingIcon2.png" alt="Wedding Icon" class="h-[35px] w-[55px] rounded-md"/>
-                </a>
-
-                <p class="font-cursive text-white font-bold text-2xl hidden lg:block lg:text-sm">D + E</p>
-            </div>
+            <a href="/" class="bg-beige rounded-md hover:bg-beige/40 transition-all duration-500 cursor-pointer">
+                <img src="weddingIcon2.png" alt="Wedding Icon" class="h-[35px] w-[55px] rounded-md"/>
+            </a>
 
             <p class="font-cursive text-white font-bold text-2xl lg:hidden">D + E</p>
         
@@ -73,7 +69,7 @@
                     <a href="memories" class="py-2 px-4 hover:bg-black/30 rounded-md transition-all duration-300 cursor-pointer">Our Memories</a>
                 </div>
 
-                <div class="h-full w-[2px] bg-white/20 rounded-full"></div>
+                <div class="h-8 w-[2px] bg-white/20 rounded-full"></div>
                 
                 <div>
                     {#if currentPath.startsWith('/admin')}
@@ -103,7 +99,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:delay-500={hamburgerOpened}
         >
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                Home
+                <a>Home</a>
             </div>
         </a>
 
@@ -113,7 +109,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-600={hamburgerOpened}>
             <div class="p-4 text-light-rust hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                RSVP
+                <a>RSVP</a>
             </div>
         </a>
 
@@ -123,7 +119,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-600={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                The Big Day
+                <a>The Big Day</a>
             </div>
         </a>
     
@@ -133,7 +129,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-700={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                Registry
+                <a>Registry</a>
             </div>
         </a>
         
@@ -143,7 +139,7 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:translate-y-0={hamburgerOpened}
         class:delay-800={hamburgerOpened}>
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                FAQs
+                <a>FAQs</a>
             </div>
         </a>
     
@@ -154,10 +150,12 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         class:delay-900={hamburgerOpened}
         >
             <div class="p-4 hover:bg-black/75 text-center transition-all duration-300 cursor-pointer">
-                Our Memories
+                <a>Our Memories</a>
             </div>
         </a>
-    
+        
+        
+
         <div
         class=" transform opacity-0 -translate-y-4 transition-all duration-300 w-full"
         class:opacity-100={hamburgerOpened}
@@ -166,15 +164,15 @@ class="w-0 transform -translate-x-20 fixed top-0 left-0 h-full z-[9] bg-black/50
         >
             {#if currentPath.startsWith('/admin')}
             <a href="/logout" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                logout
+                <p class="">logout</p>
             </a>
             {:else if isLoggedIn}
                 <a href="/logout" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                    logout
+                    <p class="">logout</p>
                 </a>
             {:else}
                 <a href="/login" class="p-4 hover:bg-black/75 w-full flex justify-center transition-all duration-300 cursor-pointer">
-                    login
+                    <p class="">login</p>
                 </a>
             {/if}
         </div>

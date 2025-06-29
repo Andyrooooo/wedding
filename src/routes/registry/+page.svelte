@@ -25,7 +25,7 @@ import AnimatedLine from '../../lib/animatedLine.svelte';
 <AnimatedLine height="h-24" color="bg-zinc-300" delay="delay-0" duration="duration-1000" />
 
 <section class="mt-20 font-proper mx-auto max-w-[1200px] w-4/5">
-    <div class="p-4 bg-rust/40 border border-rust/20 rounded-md mb-8 text-white text-lg shadow-md">
+    <div class="p-4 bg-rust/40 border border-rust/20 rounded-md text-white text-lg shadow-md">
         <p class="mb-2">We feel fortunate to have built a life together filled with love & many of the things we need. As we look to the future, we are saving for a home to call our own.</p>
         <p>Should you wish to give a gift, a contribution toward our house fund would be deeply appreciated <i class="fa-solid fa-heart text-red-600"></i></p>
     </div>
