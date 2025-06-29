@@ -1,6 +1,53 @@
 <script lang="ts">
     import Nav from '../nav/+page.svelte'
     import AnimatedLine from '../../lib/animatedLine.svelte';
+    import { onMount } from 'svelte';
+
+    let wsiw: HTMLDivElement | null = null;
+    let wsiwRef: HTMLDivElement | null = null;
+    let wkofwbp: HTMLDivElement | null = null;
+    let wkofwbpRef: HTMLDivElement | null = null;
+    let wtbaob: HTMLDivElement | null = null;
+    let wtbaobRef: HTMLDivElement | null = null;
+    let aci: HTMLDivElement | null = null;
+    let aciRef: HTMLDivElement | null = null;
+    let itpatv: HTMLDivElement | null = null;
+    let itpatvRef: HTMLDivElement | null = null;
+    let cibapo: HTMLDivElement | null = null;
+    let cibapoRef: HTMLDivElement | null = null;
+
+    function observeOnce(refGetter: () => HTMLElement | null, setter: (v: boolean) => void, threshold = 0.3) {
+        let observer: IntersectionObserver;
+        function start() {
+            const ref = refGetter();
+            if (ref) {
+                observer = new IntersectionObserver(
+                    ([entry]) => {
+                        if (entry.isIntersecting) {
+                            setter(true);
+                            observer.disconnect();
+                        }
+                    },
+                    { threshold }
+                );
+                observer.observe(ref);
+            }
+        }
+        start();
+        return () => observer && observer.disconnect();
+    }
+
+    onMount(() => {
+        const cleanups = [
+            observeOnce(() => wsiwRef, v => wsiw = v),
+            observeOnce(() => wkofwbpRef, v => wkofwbp = v),
+            observeOnce(() => wtbaobRef, v => wtbaob = v),
+            observeOnce(() => aciRef, v => aci = v),
+            observeOnce(() => itpatvRef, v => itpatv = v),
+            observeOnce(() => cibapoRef, v => cibapo = v)
+        ];
+        return () => cleanups.forEach(fn => fn());
+    });
 </script>
 
 
@@ -26,7 +73,11 @@
 
 <section class="mt-20 mx-auto max-w-[1200px] w-4/5">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 py-8 items-start">
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div 
+         bind:this={wsiwRef}
+        class:opacity-100={wsiw}
+        class:translate-y-0={wsiw}
+        class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>
@@ -37,7 +88,11 @@
             <p class="text-white/60">Let nature inspire your look—elegant, comfortable, and in harmony with the earthy palette we love.</p>
         </div>
 
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div 
+        bind:this={wkofwbpRef}
+        class:opacity-100={wkofwbp}
+        class:translate-y-0={wkofwbp}
+        class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>
@@ -47,7 +102,11 @@
             <p class="text-white/60">We’ll have a taco truck with all the fixings, plus chips, salsa, guac, and bean dip. Save room for dessert—we’re serving ice cream!</p>
         </div>
 
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div
+        bind:this={wtbaobRef}
+        class:opacity-100={wtbaob}
+        class:translate-y-0={wtbaob}
+         class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>
@@ -58,7 +117,11 @@
         </div>
 
 
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div 
+        bind:this={aciRef}
+        class:opacity-100={aci}
+        class:translate-y-0={aci}
+        class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>
@@ -68,7 +131,11 @@
             <p class="text-white/60">We adore your kids, but due to space limitations, we’re only able to invite a few special little guests. If your children are invited, their names will be listed on your invitation.</p>
         </div>
 
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div 
+        bind:this={itpatvRef}
+        class:opacity-100={itpatv}
+        class:translate-y-0={itpatv}
+        class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>
@@ -78,7 +145,11 @@
             <p class="text-white/60">Yes—free parking is available at the venue. No need to worry about finding a spot!</p>
         </div>
 
-        <div class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white">
+        <div 
+        bind:this={cibapoRef}
+        class:opacity-100={cibapo}
+        class:translate-y-0={cibapo}
+        class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
                 <i class="fa-solid fa-circle-question text-3xl"></i>
             </div>

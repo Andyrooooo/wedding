@@ -3,7 +3,7 @@
     export let height = 'h-24'; // Tailwind height class, default to h-24 (6rem)
     export let color = 'bg-zinc-300'; // Tailwind color class
     export let delay = 'delay-0'; // Tailwind delay class
-    export let duration = 'duration-1000'; // Tailwind duration class
+    export let duration = 'duration-700'; // Tailwind duration class
     let visible = false;
     let lineRef: HTMLDivElement | null = null;
 
