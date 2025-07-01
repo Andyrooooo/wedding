@@ -130,7 +130,7 @@ class:translate-y-0={countdown}
 >
     <div class="h-1/2 w-full md:h-full md:basis-5/12">
         <div class="w-full h-full ">
-            <img src="countdown.png" alt="Emma looking over the valley at Yosemite" class="object-cover h-full w-full rounded-2xl"/>
+            <img src="countdown.webp" alt="Emma looking over the valley at Yosemite" class="object-cover h-full w-full rounded-2xl" loading="lazy"/>
         </div>
     </div>
 
@@ -177,7 +177,7 @@ class:translate-y-0={rsvp}
     </div>
 
     <div class="h-[400px] md:h-full md:basis-5/12">
-        <img src="rsvp.png" alt="drew looking through a glass dome" class="h-full object-cover md:w-full mb-4 rounded-2xl aspect-[16/9]"/>
+        <img src="rsvp.webp" alt="drew looking through a glass dome" class="h-full object-cover md:w-full mb-4 rounded-2xl aspect-[16/9]" loading="lazy"/>
     </div>
 
     <div class="w-full flex justify-center md:hidden mt-4 w-4/5 mx-auto">
@@ -231,7 +231,7 @@ class:translate-y-0={rsvp}
                     <!-- <div bind:this={sectionRef0}></div> -->
                      <div class="md:w-7/12">
                         <h3 class="text-3xl font-bold mb-4 text-center">Arches National Park</h3>
-                        <p class="w-4/5 mx-auto">What began as a casual trip to Arches National Park quickly turned into a shared mission: to visit as many national parks as possible, one stunning view <a class="font-bold">and one overstuffed suitcase</a> at a time. Neither of us had any idea that somewhere between the scenic overlooks and the Airbnb check-ins, we’d find something even better than perfect photo ops: each other. <i class="fa-solid fa-heart text-red-500"></i><i class="fa-solid fa-tree text-green"></i><i class="fa-solid fa-heart text-red-500"></i></p>
+                        <p class="w-4/5 mx-auto">What began as a casual trip to Arches National Park quickly turned into a shared mission: to visit as many national parks as possible, one stunning view <strong class="font-bold">and one overstuffed suitcase</strong> at a time. Neither of us had any idea that somewhere between the scenic overlooks and the Airbnb check-ins, we’d find something even better than perfect photo ops: each other. <i class="fa-solid fa-heart text-red-500"></i><i class="fa-solid fa-tree text-green"></i><i class="fa-solid fa-heart text-red-500"></i></p>
                      </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@ class:translate-y-0={rsvp}
                 >
                     <div class="hidden md:block md:w-7/12 ">
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Yellowstone & Canyonlands</h3>
-                        <p  class="w-4/5 mx-auto">From the geysers of Yellowstone to the jaw-dropping cliffs of Canyonlands, every stop brought new adventures—and new packing lessons <a class="font-bold">which we still haven’t learned</a>. We stayed warm and cozy in Airbnbs, filled the fridge with more groceries than a family of six would need, and found joy in the little things—like the post-hike snacks we definitely didn’t earn and the playlists that somehow got us through hours of driving.</p>
+                        <p  class="w-4/5 mx-auto">From the geysers of Yellowstone to the jaw-dropping cliffs of Canyonlands, every stop brought new adventures—and new packing lessons <strong class="font-bold">which we still haven’t learned</strong>. We stayed warm and cozy in Airbnbs, filled the fridge with more groceries than a family of six would need, and found joy in the little things—like the post-hike snacks we definitely didn’t earn and the playlists that somehow got us through hours of driving.</p>
                     </div>
 
                     <div class="grid grid-cols-2 rounded-tr-2xl rounded-bl-2xl mb-4 gap-1 border border-black/20 md:w-5/12">
@@ -263,7 +263,7 @@ class:translate-y-0={rsvp}
                     <!-- <div bind:this={sectionRef1}></div> -->
                     <div class="md:hidden">
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Yellowstone & Canyonlands</h3>
-                        <p  class="w-4/5 mx-auto">From the geysers of Yellowstone to the jaw-dropping cliffs of Canyonlands, every stop brought new adventures—and new packing lessons <a class="font-bold">which we still haven’t learned</a>. We stayed warm and cozy in Airbnbs, filled the fridge with more groceries than a family of six would need, and found joy in the little things—like the post-hike snacks we definitely didn’t earn and the playlists that somehow got us through hours of driving.</p>
+                        <p  class="w-4/5 mx-auto">From the geysers of Yellowstone to the jaw-dropping cliffs of Canyonlands, every stop brought new adventures—and new packing lessons <strong class="font-bold">which we still haven’t learned</strong>. We stayed warm and cozy in Airbnbs, filled the fridge with more groceries than a family of six would need, and found joy in the little things—like the post-hike snacks we definitely didn’t earn and the playlists that somehow got us through hours of driving.</p>
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@ class:translate-y-0={rsvp}
                     <!-- <div bind:this={sectionRef2}></div> -->
                     <div class="md:w-7/12">
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Yosemite, Sequoia, Joshua Tree, Bryce Canyon</h3>
-                        <p  class="w-4/5 mx-auto">Our trip to Yosemite was filled with awe <a class="font-bold">and maybe a few sore legs</a>, and in Sequoia, we stood in total silence beneath trees older than time. We got a bit more boho in Joshua Tree, and switched things up for Bryce Canyon, where we made it a friends trip—equal parts hiking and group selfies.</p>
+                        <p  class="w-4/5 mx-auto">Our trip to Yosemite was filled with awe <strong class="font-bold">and maybe a few sore legs</strong>, and in Sequoia, we stood in total silence beneath trees older than time. We got a bit more boho in Joshua Tree, and switched things up for Bryce Canyon, where we made it a friends trip—equal parts hiking and group selfies.</p>
                     </div>
                 </div>
             </div>
@@ -306,7 +306,7 @@ class:translate-y-0={rsvp}
                 >
                     <div class="hidden md:block md:w-7/12">
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Rockies, White Sands, Carlesbad, Guadalupe, Capitol Reef</h3>
-                        <p  class="w-4/5 mx-auto mb-2">By the time we reached the Rocky Mountains, we had this whole travel rhythm down: one of us drove, the other navigated <a class="font-bold">okay, “navigated” mostly meant giving snack updates</a>, and we both pretended not to notice how many times we repacked the trunk. White Sands, Carlsbad Caverns, and the Guadalupe Mountains added more memories—and more photos we’ll never delete.</p>
+                        <p  class="w-4/5 mx-auto mb-2">By the time we reached the Rocky Mountains, we had this whole travel rhythm down: one of us drove, the other navigated <strong class="font-bold">okay, “navigated” mostly meant giving snack updates</strong>, and we both pretended not to notice how many times we repacked the trunk. White Sands, Carlsbad Caverns, and the Guadalupe Mountains added more memories—and more photos we’ll never delete.</p>
                         <p class="w-4/5 mx-auto">Next came Capitol Reef, a park that surprised us with its quiet beauty and wide open spaces—another hidden gem we got to share together.</p>
                     </div>
 
@@ -323,7 +323,7 @@ class:translate-y-0={rsvp}
                     <!-- <div bind:this={sectionRef1}></div> -->
                     <div class="md:hidden">    
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Rockies, White Sands, Carlesbad, Guadalupe, Capitol Reef</h3>
-                        <p  class="w-4/5 mx-auto mb-2">By the time we reached the Rocky Mountains, we had this whole travel rhythm down: one of us drove, the other navigated <a class="font-bold">okay, “navigated” mostly meant giving snack updates</a>, and we both pretended not to notice how many times we repacked the trunk. White Sands, Carlsbad Caverns, and the Guadalupe Mountains added more memories—and more photos we’ll never delete.</p>
+                        <p  class="w-4/5 mx-auto mb-2">By the time we reached the Rocky Mountains, we had this whole travel rhythm down: one of us drove, the other navigated <strong class="font-bold">okay, “navigated” mostly meant giving snack updates</strong>, and we both pretended not to notice how many times we repacked the trunk. White Sands, Carlsbad Caverns, and the Guadalupe Mountains added more memories—and more photos we’ll never delete.</p>
                         <p class="w-4/5 mx-auto">Next came Capitol Reef, a park that surprised us with its quiet beauty and wide open spaces—another hidden gem we got to share together.</p>
                     </div>
                 </div>
@@ -355,7 +355,7 @@ class:translate-y-0={rsvp}
                         <h3 class="text-3xl font-bold mb-4 text-center w-4/5 mx-auto">Volcanoes National Park</h3>
                         <div class="w-4/5 mx-auto">
                             <p  class="mb-2">We wrapped up our adventure with a peaceful stay near Hawai‘i Volcanoes National Park, and on our final morning—outside our Airbnb, still sipping coffee and soaking in those island vibes—one of us got down on one knee.</p>
-                            <p class="mb-2"><a class="font-bold">Spoiler alert:</a> the other said yes. <i class="fa-solid fa-ring text-yellow-700"></i></p>
+                            <p class="mb-2"><strong class="font-bold">Spoiler alert:</strong> the other said yes. <i class="fa-solid fa-ring text-yellow-700"></i></p>
                             <p class="">We’ve shared so many miles and moments on this journey, and now we can’t wait to share our next one—with all of you. <i class="fa-solid fa-person"></i><i class="fa-solid fa-person-dress"></i></p>
                         </div>
                     </div>
@@ -398,9 +398,5 @@ class:translate-y-0={rsvp}
 <style>
 :global(body[data-theme="wedding"]) {
     background-color: #EFEFEF !important; /* Replace with your color */
-}
-
-.line-transition {
-    transition: height 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

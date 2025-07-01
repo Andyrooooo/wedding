@@ -242,7 +242,7 @@
                         rsvpButtonTwo = true;
                         }
                     }}
-                    class="bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
+                    class="{userGuestList.length > 0 ? 'bg-lime-500/80 hover:bg-lime-500' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
                     >
                     <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
                     </button>
@@ -268,7 +268,7 @@
                                 finalDetails = true;
                             }
                             }}
-                        class="bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
+                        class="{allAnswered ? 'bg-lime-500/80 hover:bg-lime-500' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
                     >
                         <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
                     </button>
@@ -285,9 +285,9 @@
                 <div>
                     <button
                         on:click={submitGuestsRsvps}
-                        class="bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
+                        class="bg-black/80 hover:bg-black border border-white/10 rounded-full transition-all duration-300 text-white"
                     >
-                        <p class=" px-4 py-2 font-bold">Submit <a class="{savingRSVP ? 'fa-solid fa-circle-notch animate-spin ml-1' : ''}"></a></p>
+                        <p class=" px-4 py-2 font-bold font-proper">Submit <a class="{savingRSVP ? 'fa-solid fa-circle-notch animate-spin ml-1' : ''}"></a></p>
                     </button>
                 </div>
             {/if}
@@ -296,7 +296,7 @@
                 <div class="">
                     <button  
                     on:click={() => weddingReceptionDetails = true}
-                    class=" bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300 font-bold px-4 py-2">
+                    class=" bg-black/80 hover:bg-black border border-white/10 rounded-full transition-all duration-300 font-bold px-4 py-2 font-proper text-white">
                         View Wedding Details
                     </button>
                 </div>
@@ -394,7 +394,7 @@
         <div class="font-proper text-center ">
             <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
             <p class="text-black/80 text-sm">Friday, October 17, 2025</p>
-            <p class="mb-3 text-black/80 text-sm">2:00pm - 8:00pm</p>
+            <p class="mb-3 text-black/80 text-sm">2:00pm - 9:00pm</p>
             <p class="mb-2 text-black/80 text-sm">River Bridge Event Center</p>
             <p class="mb-4 text-black/80 text-sm">1225 S Main Street Spanish Fork, Utah 84660</p>
             <p class="text-left mb-2">We’re so excited to celebrate our wedding at River Bridge Event Center in beautiful Spanish Fork, Utah! This rustic venue offers scenic river views, mountain backdrops, and a cozy barn atmosphere—perfect for our special day.</p>
@@ -424,7 +424,7 @@
             <div class="font-proper text-center ">
                 <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
                 <p class="text-black/80 text-sm">Friday, October 17, 2025</p>
-                <p class="mb-3 text-black/80 text-sm">2:00pm - 8:00pm</p>
+                <p class="mb-3 text-black/80 text-sm">2:00pm - 9:00pm</p>
                 <p class="mb-2 text-black/80 text-sm">River Bridge Event Center</p>
                 <p class="mb-4 text-black/80 text-sm">1225 S Main Street Spanish Fork, Utah 84660</p>
                 <p class="text-left mb-2">We’re so excited to celebrate our wedding at River Bridge Event Center in beautiful Spanish Fork, Utah! This rustic venue offers scenic river views, mountain backdrops, and a cozy barn atmosphere—perfect for our special day.</p>

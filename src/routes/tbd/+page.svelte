@@ -176,7 +176,7 @@
         <div class="font-proper text-center ">
             <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
             <p class="text-black/80 text-sm">Friday, October 17, 2025</p>
-            <p class="mb-3 text-black/80 text-sm">2:00pm - 8:00pm</p>
+            <p class="mb-3 text-black/80 text-sm">2:00pm - 9:00pm</p>
             <p class="mb-2 text-black/80 text-sm">River Bridge Event Center</p>
             <p class="mb-4 text-black/80 text-sm">1225 S Main Street Spanish Fork, Utah 84660</p>
             <p class="text-left mb-2">We’re so excited to celebrate our wedding at River Bridge Event Center in beautiful Spanish Fork, Utah! This rustic venue offers scenic river views, mountain backdrops, and a cozy barn atmosphere—perfect for our special day.</p>
@@ -206,7 +206,7 @@
             <div class="font-proper text-center ">
                 <h1 class="text-4xl font-bold mb-4">Wedding Ceremony and Reception</h1>
                 <p class="text-black/80 text-sm">Friday, October 17, 2025</p>
-                <p class="mb-3 text-black/80 text-sm">2:00pm - 8:00pm</p>
+                <p class="mb-3 text-black/80 text-sm">2:00pm - 9:00pm</p>
                 <p class="mb-2 text-black/80 text-sm">River Bridge Event Center</p>
                 <p class="mb-4 text-black/80 text-sm">1225 S Main Street Spanish Fork, Utah 84660</p>
                 <p class="text-left mb-2">We’re so excited to celebrate our wedding at River Bridge Event Center in beautiful Spanish Fork, Utah! This rustic venue offers scenic river views, mountain backdrops, and a cozy barn atmosphere—perfect for our special day.</p>
