@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { testPeople } from '$lib/testDB';
+import { people } from '$lib/db';
 
 export const PUT: RequestHandler = async ({ request }) => {
     const guests = await request.json();
@@ -14,8 +14,8 @@ export const PUT: RequestHandler = async ({ request }) => {
         for (const guest of guests) {
             // Update each guest's RSVP status by ID
             // Replace this with your actual DB update logic
-            await testPeople.query(
-                'UPDATE testPeople SET rsvp_status = ? WHERE id = ?',
+            await people.query(
+                'UPDATE people SET rsvp_status = ? WHERE id = ?',
                 [guest.rsvp_status, guest.id]
             );
         }
