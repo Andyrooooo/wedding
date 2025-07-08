@@ -330,10 +330,12 @@
     </div>
 {/if}
 
-
+{#if rsvpList}
+    <div in:fade={{ duration: 300 }} out:fade={{ duration: 300 }} class="fixed top-0 left-0 w-full h-full z-[6] bg-black/40 backdrop-blur-lg"></div>
+{/if}
 
 {#if rsvpList}
-    <div transition:slide={{ duration: 500, easing: cubicOut }}  class="fixed bottom-0 left-0 w-full h-full z-[6] bg-black/40 backdrop-blur-lg">
+    <div transition:slide={{ duration: 500, easing: cubicOut }}  class="fixed bottom-0 left-0 w-full h-full z-[7]">
         <div class="h-4/5 w-full absolute bottom-0 left-0 ">
             <div class="bg-white rounded-t-2xl max-w-[768px] mx-auto h-full flex flex-col">
                 <div class="flex justify-end p-4">
