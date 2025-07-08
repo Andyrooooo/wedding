@@ -72,7 +72,7 @@
 <AnimatedLine height="h-24" color="bg-zinc-300" delay="delay-0" duration="duration-1000" />
 
 <section class="mt-20 mx-auto max-w-[1200px] w-full px-4 md:px-0 md:w-4/5 transition-all duration-300">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 py-8 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8 items-start">
         <div 
          bind:this={wsiwRef}
         class:opacity-100={wsiw}
