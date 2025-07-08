@@ -69,6 +69,22 @@
         link.click();
         document.body.removeChild(link);
     }
+
+    function clickOutside(node: HTMLElement) {
+        const handleClick = (event: MouseEvent) => {
+            if (!node.contains(event.target as Node)) {
+                findNameOnList = false;
+            }
+        };
+
+        document.addEventListener('click', handleClick, true);
+
+        return {
+            destroy() {
+                document.removeEventListener('click', handleClick, true);
+            }
+        };
+    }
 </script>
 
 <Nav />
@@ -96,13 +112,14 @@
                 <p class="text-black mb-4 font-proper">Did you already RSVP? If so, please find your name in the list. If you have not RSVP’d please click “RSVP”.</p>
             {:else}
                 <div 
-                class="mb-4 relative font-proper">
-                    <button on:click={() => findNameOnList = !findNameOnList} class="w-full px-4 py-2 flex justify-between items-center border-b {findNameOnList ? 'border-black' : 'border-black/20'} transition-all duration-300">
+                use:clickOutside
+                class="mb-8 relative font-proper">
+                    <button on:click={() => findNameOnList = !findNameOnList} class="w-full px-4 py-2 flex justify-between items-center border {findNameOnList ? 'border-black bg-zinc-100' : 'border-black/20 bg-white/20'} rounded-md transition-all duration-300">
                         <p class="font-proper transition-all duration-300 {currentlySelectedPerson != null ? 'text-black' : 'text-black/20'} ">{currentlySelectedPerson ? `${currentlySelectedPerson.first_name} ${currentlySelectedPerson.last_name}` : 'Name'}</p> 
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
 
-                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-white rounded-md border border-black/20 flex flex-col h-32 overflow-y-scroll scrollbar-hide">
+                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/20 flex flex-col h-32 overflow-y-scroll scrollbar-hide">
                         {#each attending as attendee}
                             <a on:click={() => selectedPerson(attendee.first_name, attendee.last_name, attendee.id)} class="hover:bg-black/5 px-4 py-2 transition-all duration-300 cursor-pointer">{attendee.first_name} {attendee.last_name}</a>
                         {/each}
