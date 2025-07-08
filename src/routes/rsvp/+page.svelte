@@ -226,26 +226,42 @@
         <div class="bg-black/40 backdrop-blur-lg rounded-full p-2 flex gap-2 shadow-lg border border-white/20 pointer-events-auto">
             {#if rsvpButtonOne}
                 <div class="">
-                    <button on:click={() => rsvpList = true} class="{userGuestList.length > 0 ? 'bg-black text-white' : 'bg-zinc-100 hover:bg-white text-black'} border border-black/10 rounded-full transition-all duration-300">
-                        <i class="fa-solid fa-list text-xl px-2.5 py-1.5"></i>
-                    </button>
+                    {#if userGuestList.length > 0}
+                        <button on:click={() => rsvpList = true} class="bg-black/80 hover:bg-black text-white border border-black/10 rounded-full">
+                            <i class="fa-solid fa-list text-xl px-2.5 py-1.5"></i>
+                        </button>
+                    {:else}
+                        <button on:click={() => rsvpList = true} disabled class="bg-white text-black border border-black/10 rounded-full disabled">
+                            <i class="fa-solid fa-list text-xl px-2.5 py-1.5"></i>
+                        </button>
+                    {/if}
                 </div>
 
                 <div class="">
-                    <button
-                    on:click={() => {
-                        if (userGuestList.length === 0) {
-                        errorModal = true;
-                        } else {
-                        yesOrNo = true;
-                        rsvpButtonOne = false;
-                        rsvpButtonTwo = true;
-                        }
-                    }}
-                    class="{userGuestList.length > 0 ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
-                    >
-                    <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
-                    </button>
+                    {#if userGuestList.length > 0}
+                    <!-- {userGuestList.length > 0 ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} -->
+                        <button
+                        on:click={() => {
+                            if (userGuestList.length === 0) {
+                            errorModal = true;
+                            } else {
+                            yesOrNo = true;
+                            rsvpButtonOne = false;
+                            rsvpButtonTwo = true;
+                            }
+                        }}
+                        class="bg-lime-500 hover:bg-lime-600 border border-black/10 rounded-full transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
+                        </button>
+                    {:else}
+                        <button
+                        disabled
+                        class="bg-white border border-black/10 rounded-full transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
+                        </button>
+                    {/if}
                 </div>
             {/if}
 
@@ -257,21 +273,30 @@
                 </div>
 
                 <div>
-                    <button
-                        on:click={() => {
-                            if (!allAnswered) {
-                                attendingErrorModal = true;
-                            } else {
-                                rsvpButtonOne = false
-                                rsvpButtonTwo = false
-                                rsvpButtonThree = true
-                                finalDetails = true;
-                            }
-                            }}
-                        class="{allAnswered ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
-                    >
-                        <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
-                    </button>
+                    {#if !allAnswered}
+                        <button
+                            disabled
+                            class="bg-white border border-black/10 rounded-full transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
+                        </button>
+                    {:else}
+                        <button
+                            on:click={() => {
+                                if (!allAnswered) {
+                                    attendingErrorModal = true;
+                                } else {
+                                    rsvpButtonOne = false
+                                    rsvpButtonTwo = false
+                                    rsvpButtonThree = true
+                                    finalDetails = true;
+                                }
+                                }}
+                            class="bg-lime-500 hover:bg-lime-600 border border-black/10 rounded-full transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
+                        </button>
+                    {/if}
                 </div>
             {/if}
 
