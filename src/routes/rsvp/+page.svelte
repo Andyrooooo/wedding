@@ -61,7 +61,7 @@
         }
     }
 
-    function removeGuest(guest) {
+    function removeGuest(guest: any) {
         userGuestList = userGuestList.filter(g => g.id !== guest.id);
     }
 
@@ -226,7 +226,7 @@
         <div class="bg-black/40 backdrop-blur-lg rounded-full p-2 flex gap-2 shadow-lg border border-white/20 pointer-events-auto">
             {#if rsvpButtonOne}
                 <div class="">
-                    <button on:click={() => rsvpList = true} class=" bg-zinc-800 hover:bg-black border border-black/10 rounded-full transition-all duration-300 text-white">
+                    <button on:click={() => rsvpList = true} class="{userGuestList.length > 0 ? 'bg-black text-white' : 'bg-zinc-100 hover:bg-white text-black'} border border-black/10 rounded-full transition-all duration-300">
                         <i class="fa-solid fa-list text-xl px-2.5 py-1.5"></i>
                     </button>
                 </div>
@@ -242,7 +242,7 @@
                         rsvpButtonTwo = true;
                         }
                     }}
-                    class="{userGuestList.length > 0 ? 'bg-lime-500/80 hover:bg-lime-500' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
+                    class="{userGuestList.length > 0 ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
                     >
                     <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
                     </button>
@@ -268,7 +268,7 @@
                                 finalDetails = true;
                             }
                             }}
-                        class="{allAnswered ? 'bg-lime-500/80 hover:bg-lime-500' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
+                        class="{allAnswered ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} bg-white/80 hover:bg-white border border-black/10 rounded-full transition-all duration-300"
                     >
                         <i class="fa-solid fa-arrow-right text-xl px-3 py-1.5"></i>
                     </button>

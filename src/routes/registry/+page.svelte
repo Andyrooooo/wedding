@@ -70,7 +70,7 @@
 
 <AnimatedLine height="h-24" color="bg-zinc-300" delay="delay-0" duration="duration-1000" />
 
-<section class="mt-20 font-proper mx-auto max-w-[1200px] w-4/5">
+<section class="mt-20 font-proper mx-auto max-w-[1200px] w-full px-4 md:px-0 md:w-4/5 transition-all duration-300">
     <div 
     bind:this={introBlurbRef}
     class:opacity-100={introBlurb}
@@ -93,7 +93,7 @@
             <h2 class="text-3xl font-proper font-bold mb-4 text-center">Registry</h2>
             <p class="text-white/60 mb-4">Here is where you can find our Amazon registry items:</p>
             
-            <a href="https://www.amazon.com/wedding/organize-registry?ref_=list_d_gl_lfu_nav" target="_blank" class="w-full text-center px-4 py-2 rounded-md bg-black/80 shadow-lg border border-white/10 hover:bg-black transition-all duration-300 font-bold text-white">Registry</a>
+            <a href="https://www.amazon.com/wedding/registry/DBRHC7YJ2GAU" target="_blank" class="w-full text-center px-4 py-2 rounded-md bg-black/80 shadow-lg border border-white/10 hover:bg-black transition-all duration-300 font-bold text-white">Registry</a>
         </div>
 
 
