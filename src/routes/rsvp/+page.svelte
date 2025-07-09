@@ -101,6 +101,44 @@
         link.click();
         document.body.removeChild(link);
     }
+
+    let startY = 0;
+    let currentY = 0;
+    let isDragging = false;
+    let modalElement: HTMLElement;
+    
+    function handleTouchStart(e: TouchEvent) {
+        startY = e.touches[0].clientY;
+        isDragging = true;
+    }
+    
+    function handleTouchMove(e: TouchEvent) {
+        if (!isDragging) return;
+        currentY = e.touches[0].clientY;
+        const deltaY = currentY - startY;
+        
+        // Only allow downward movement
+        if (deltaY > 0) {
+            modalElement.style.transform = `translateY(${deltaY}px)`;
+        }
+    }
+    
+    function handleTouchEnd() {
+        if (!isDragging) return;
+        const deltaY = currentY - startY;
+        
+        // If dragged down more than 100px, close the modal
+        if (deltaY > 100) {
+            rsvpList = false;
+        } else {
+            // Snap back to original position
+            modalElement.style.transform = 'translateY(0px)';
+        }
+        
+        isDragging = false;
+        startY = 0;
+        currentY = 0;
+    }
 </script>
 
 
@@ -335,10 +373,23 @@
 {/if}
 
 {#if rsvpList}
-    <div transition:slide={{ duration: 500, easing: cubicOut }}  class="fixed bottom-0 left-0 w-full h-full z-[7]">
-        <div class="h-4/5 w-full absolute bottom-0 left-0 ">
-            <div class="bg-white rounded-t-2xl max-w-[768px] mx-auto h-full flex flex-col">
-                <div class="flex justify-end p-4">
+    <div transition:slide={{ duration: 500, easing: cubicOut }} class="fixed bottom-0 left-0 w-full h-full z-[7]">
+        <div class="h-4/5 w-full absolute bottom-0 left-0">
+            <div 
+                bind:this={modalElement}
+                class="bg-white rounded-t-2xl max-w-[768px] mx-auto h-full flex flex-col transition-transform duration-200"
+            >
+                <!-- Drag handle -->
+                <div 
+                    class="w-full flex justify-center py-2 cursor-grab active:cursor-grabbing"
+                    on:touchstart={handleTouchStart}
+                    on:touchmove={handleTouchMove}
+                    on:touchend={handleTouchEnd}
+                >
+                    <div class="w-12 h-1 bg-gray-300 rounded-full"></div>
+                </div>
+                
+                <div class="flex justify-end px-4 pb-2">
                     <button on:click={() => rsvpList = false}>
                         <i class="fa-solid fa-circle-xmark text-3xl text-black/80 hover:text-black transition-all duration-300"></i>
                     </button>
@@ -358,7 +409,6 @@
                     {/each}
                 </div>
             </div>
-            
         </div>
     </div>
 {/if}
