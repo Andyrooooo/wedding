@@ -59,10 +59,18 @@
         if (!userGuestList.find(g => g.id === unresponse.id)) {
             userGuestList = [...userGuestList, unresponse];
         }
+        console.log(userGuestList);
     }
 
     function removeGuest(guest: any) {
+        // Remove from userGuestList
         userGuestList = userGuestList.filter(g => g.id !== guest.id);
+        
+        // Reset the rsvp_status back to 'no response' in the original people array
+        const originalPerson = people.find(p => p.id === guest.id);
+        if (originalPerson) {
+            originalPerson.rsvp_status = 'no response';
+        }
     }
 
     $: allAnswered = userGuestList.length > 0 &&
@@ -110,21 +118,27 @@
     function handleTouchStart(e: TouchEvent) {
         startY = e.touches[0].clientY;
         isDragging = true;
+        e.preventDefault(); // Prevent default touch behavior
     }
     
     function handleTouchMove(e: TouchEvent) {
         if (!isDragging) return;
+        
         currentY = e.touches[0].clientY;
         const deltaY = currentY - startY;
         
         // Only allow downward movement
         if (deltaY > 0) {
+            e.preventDefault(); // Prevent page scrolling
             modalElement.style.transform = `translateY(${deltaY}px)`;
         }
     }
     
-    function handleTouchEnd() {
+    function handleTouchEnd(e: TouchEvent) {
         if (!isDragging) return;
+        
+        e.preventDefault(); // Prevent default behavior
+        
         const deltaY = currentY - startY;
         
         // If dragged down more than 100px, close the modal
@@ -201,7 +215,7 @@
 {#if yesOrNo}
     <div in:fly={{ x: 800, duration: 500, easing: cubicIn, opacity: 1 }} out:fly={{ x: 800, duration: 500, easing: cubicOut, opacity:1 }} class="fixed bottom-0 left-0 w-full h-full z-[5] bg-white border border-black/20">
         <div class="h-full w-full max-w-[768px] mx-auto flex flex-col">
-            <p class="mt-[6.5rem] mb-4 px-4 font-bold font-proper border-b border-black/20 px-4 pb-2">Who will be attending?</p>
+            <p class="mt-[6.5rem] mb-4 px-4 font-bold font-proper border-b border-black/20 mx-4 pb-2">Who will be attending?</p>
 
             <div class="flex-1 overflow-y-auto scrollbar-hide font-proper mx-4">
                 {#each userGuestList as guest}
@@ -209,7 +223,7 @@
                         <span>{guest.first_name} {guest.last_name}</span>
 
                         <div class="flex gap-2">
-                            <button class="{guest.rsvp_status === 'attending' ? 'bg-white' : 'bg-black/10'} transition-all duration-300 border border-black/20 px-4 py-2 rounded-md "
+                            <button class="{guest.rsvp_status === 'attending' ? 'bg-black/20' : 'bg-white'} transition-all duration-300 border border-black/20 px-4 py-2 rounded-md "
                             on:click={() => {guest.rsvp_status = 'attending'}}
                             >Yes</button>
 
@@ -229,7 +243,7 @@
 {#if finalDetails}
     <div in:fly={{ x: 800, duration: 500, easing: cubicIn, opacity: 1 }} out:fly={{ x: 800, duration: 500, easing: cubicOut, opacity:1 }} class="fixed bottom-0 left-0 w-full h-full z-[6] bg-white border border-black/20">
         <div class="h-full w-full max-w-[768px] mx-auto flex flex-col">
-            <p class="mt-[6.5rem] mb-4 px-4 font-bold font-proper border-b border-black/20 px-4 pb-2">Guests RSVP Status</p>
+            <p class="mt-[6.5rem] mb-4 px-4 font-bold font-proper border-b border-black/20 mx-4 pb-2">Guests RSVP Status</p>
 
             <div class="pb-4 flex-1 overflow-y-scroll scrollbar-hide font-proper px-4">
                 {#each userGuestList as guest}
@@ -265,7 +279,7 @@
             {#if rsvpButtonOne}
                 <div class="">
                     {#if userGuestList.length > 0}
-                        <button on:click={() => rsvpList = true} class="bg-black/80 hover:bg-black text-white border border-black/10 rounded-full">
+                        <button in:fade={{ duration: 300 }} out:fade={{ duration: 300 }} on:click={() => rsvpList = true} class="bg-black/80 hover:bg-black text-white border border-black/10 rounded-full">
                             <i class="fa-solid fa-list text-xl px-2.5 py-1.5"></i>
                         </button>
                     {:else}
@@ -279,6 +293,7 @@
                     {#if userGuestList.length > 0}
                     <!-- {userGuestList.length > 0 ? 'bg-lime-500 hover:bg-lime-600' : 'bg-white/80'} -->
                         <button
+                        in:fade={{ duration: 300 }} out:fade={{ duration: 300 }}
                         on:click={() => {
                             if (userGuestList.length === 0) {
                             errorModal = true;
@@ -320,6 +335,7 @@
                         </button>
                     {:else}
                         <button
+                        in:fade={{ duration: 300 }} out:fade={{ duration: 300 }}
                             on:click={() => {
                                 if (!allAnswered) {
                                     attendingErrorModal = true;
@@ -381,7 +397,8 @@
             >
                 <!-- Drag handle -->
                 <div 
-                    class="w-full flex justify-center py-2 cursor-grab active:cursor-grabbing"
+                    class="w-full flex justify-center py-2 cursor-grab active:cursor-grabbing mb-8 lg:hidden"
+                    style="touch-action: none;"
                     on:touchstart={handleTouchStart}
                     on:touchmove={handleTouchMove}
                     on:touchend={handleTouchEnd}
@@ -389,7 +406,7 @@
                     <div class="w-12 h-1 bg-gray-300 rounded-full"></div>
                 </div>
                 
-                <div class="flex justify-end px-4 pb-2">
+                <div class="hidden lg:flex justify-end px-4 mb-2 mt-4">
                     <button on:click={() => rsvpList = false}>
                         <i class="fa-solid fa-circle-xmark text-3xl text-black/80 hover:text-black transition-all duration-300"></i>
                     </button>
