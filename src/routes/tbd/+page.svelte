@@ -1,7 +1,7 @@
 <script lang="ts">
     import Nav from '../nav/+page.svelte'
     import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';
 
     // creates array of users from the database
@@ -14,6 +14,8 @@
     let showFindName = false
     let nameChecking = false
     let errorModal = false
+    let guestToFind = ''
+    let isGuestSelected = false;
 
     $: attending = people.filter(person => person.rsvp_status === 'attending');
 
@@ -21,18 +23,21 @@
         // await delay(2000)
         const res = await fetch('/people')
         if (res.ok) {
-            people = await res.json()
+           let data = await res.json();
+            // Sort by last_name, then first_name
+            data.sort((a, b) => {
+                const last = a.last_name.localeCompare(b.last_name);
+                if (last !== 0) return last;
+                return a.first_name.localeCompare(b.first_name);
+            });
+            people = data;
         }
         setTimeout(() => {
             showFindName = true
         }, 500)
     })
 
-    function selectedPerson(first_name: string, last_name: string, id: number) {
-        findNameOnList = false  
-        currentlySelectedPerson = { id, first_name, last_name };
-        // You can add more logic here, like navigating to a specific page or showing more details
-    }
+    
 
     function nameCheckClear() {
         if (currentlySelectedPerson === null) {
@@ -55,6 +60,7 @@
                 weddingReceptionDetails = true
                 findNameComponent = false
                 currentlySelectedPerson = null
+                guestToFind = ''
             }, 1000)
         } else {
             console.log('No match found');
@@ -85,6 +91,31 @@
             }
         };
     }
+
+    function selectedPerson(first_name: string, last_name: string, id: number) {
+        findNameOnList = false  
+        currentlySelectedPerson = { id, first_name, last_name };
+        guestToFind = `${first_name} ${last_name}`; // Update the input value
+        isGuestSelected = true;
+    }
+
+    function handleInput() {
+        isGuestSelected = false; // Reset when user types manually
+    }
+
+    $: filteredGuestList = guestToFind.trim() === ''
+    ? attending
+    : attending.filter(person => {
+        const searchTerm = guestToFind.trim().toLowerCase();
+        const firstName = person.first_name.toLowerCase();
+        const lastName = person.last_name.toLowerCase();
+        const fullName = `${firstName} ${lastName}`;
+        
+        // Check if search matches first name, last name, or full name
+        return firstName.includes(searchTerm) || 
+               lastName.includes(searchTerm) || 
+               fullName.includes(searchTerm);
+    });
 </script>
 
 <Nav />
@@ -114,15 +145,45 @@
                 <div 
                 use:clickOutside
                 class="mb-8 relative font-proper">
-                    <button on:click={() => findNameOnList = !findNameOnList} class="w-full px-4 py-2 flex justify-between items-center border {findNameOnList ? 'border-black/40 bg-zinc-100' : 'border-black/20 bg-white/20'} rounded-md transition-all duration-300">
+                    <div class="relative mb-4 font-proper">
+                        <input 
+                        on:focus={() => findNameOnList = true}
+                        on:input={handleInput}
+                        bind:value={guestToFind}
+                        placeholder="Name" 
+                        class="w-full rounded-md border {findNameOnList ? 'focus:border-black/40 bg-zinc-100' : 'border-black/20 bg-white/20'} focus:outline-none focus:ring-0 transition-all duration-300"
+                        />
+                        
+                        {#if guestToFind.trim() !== '' && !isGuestSelected}
+                            <button
+                            transition:fade={{ duration: 300 }}
+                            on:click={() => guestToFind = ''}
+                            class="absolute top-0 right-4 text-xl h-full rounded-md text-black hover:text-black/80 transition-all duration-300"
+                        ><i class="fa-solid fa-circle-xmark "></i></button>
+                        {/if}
+                    </div>
+
+                    <!-- <button on:click={() => findNameOnList = !findNameOnList} class="w-full px-4 py-2 flex justify-between items-center border {findNameOnList ? 'border-black/40 bg-zinc-100' : 'border-black/20 bg-white/20'} rounded-md transition-all duration-300">
                         <p class="font-proper transition-all duration-300 {currentlySelectedPerson != null ? 'text-black' : 'text-black/20'} ">{currentlySelectedPerson ? `${currentlySelectedPerson.first_name} ${currentlySelectedPerson.last_name}` : 'Name'}</p> 
                         <i class="fa-solid fa-chevron-down"></i>
-                    </button>
+                    </button> -->
 
-                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/40 flex flex-col h-32 overflow-y-scroll scrollbar-hide">
+                    <!-- <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/40 flex flex-col h-48 overflow-y-scroll scrollbar-hide">
                         {#each attending as attendee}
                             <a on:click={() => selectedPerson(attendee.first_name, attendee.last_name, attendee.id)} class="hover:bg-black/5 px-4 py-2 transition-all duration-300 cursor-pointer">{attendee.first_name} {attendee.last_name}</a>
                         {/each}
+                    </div> -->
+
+                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/40 flex flex-col h-48 overflow-y-scroll scrollbar-hide">
+                        {#if filteredGuestList.length === 0}
+                            <div class="h-full w-full flex justify-center items-center">
+                                <p class="px-4 py-2 text-black/40">No Guests Found</p>
+                            </div>
+                        {:else}
+                            {#each filteredGuestList as guest}
+                                <a on:click={() => selectedPerson(guest.first_name, guest.last_name, guest.id)} class="hover:bg-black/5 px-4 py-2 transition-all duration-300 cursor-pointer">{guest.first_name} {guest.last_name}</a>
+                            {/each}
+                        {/if}
                     </div>
                 </div>
             {/if}
@@ -138,7 +199,9 @@
 
                 <div class="">
                     {#if findNameComponent}
-                        <button on:click={nameCheckClear} class="text-center w-full rounded-md text-black font-bold px-4 py-2 hover:bg-white bg-white/80 transition-all duration-300 border border-black/10">Enter <a class="{nameChecking ? 'fa-solid fa-circle-notch animate-spin ml-1' : ''}"></a></button>
+                        <button 
+                        disabled={!isGuestSelected}
+                        on:click={nameCheckClear} class="text-center w-full rounded-md text-black font-bold px-4 py-2 {isGuestSelected ? 'bg-white/80 hover:bg-white' : 'bg-white/40 cursor-not-allowed'} transition-all duration-300 border border-black/10">Enter <a class="{nameChecking ? 'fa-solid fa-circle-notch animate-spin ml-1' : ''}"></a></button>
                     {:else}
                         <button on:click={() => findNameComponent = true} class="text-center w-full rounded-md bg-white/80 px-4 py-2 hover:bg-white transition-all duration-300 border border-black/10 font-bold">Find Name</button>
                     {/if}
@@ -185,7 +248,7 @@
 
     <div class="flex justify-between p-4 w-full bg-white items-center border-b border-black/10 rounded-t-2xl">
         <button on:click={downloadDetails} class="bg-black/80 hover:bg-black transition-all duration-300 rounded-md px-4 py-2 border border-white/10 text-white transition-all duration-300 font-bold"><i class="fa-solid fa-circle-down mr-2"></i>Wedding Details</button>
-        <button on:click={() => weddingReceptionDetails = false} class="fa-solid fa-circle-xmark text-4xl text-black/80 hover:text-black transition-all duration-300"></button>
+        <button on:click={() => weddingReceptionDetails = false} class="text-4xl text-black/80 hover:text-black transition-all duration-300"><i class="fa-solid fa-circle-xmark "></i></button>
     </div>
 
     <div class="relative overflow-y-scroll scrollbar-hide h-full p-4 pb-8">
@@ -214,7 +277,7 @@
         <!-- Header -->
         <div class="flex justify-between pb-4 w-full bg-white items-center flex-shrink-0 border-b border-black/10 px-4">
             <button on:click={downloadDetails} class="bg-black/80 hover:bg-black transition-all duration-300 rounded-md px-4 py-2 border border-white/10 text-white font-bold"><i class="fa-solid fa-circle-down mr-2"></i>Wedding Details</button>
-            <button on:click={() => weddingReceptionDetails = false} class="fa-solid fa-circle-xmark text-4xl text-black/80 hover:text-black transition-all duration-300"></button>
+            <button on:click={() => weddingReceptionDetails = false} class="text-4xl text-black/80 hover:text-black transition-all duration-300"><i class="fa-solid fa-circle-xmark "></i></button>
         </div>
 
         <!-- Scrollable Content -->
