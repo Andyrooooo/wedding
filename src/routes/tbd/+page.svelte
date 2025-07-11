@@ -151,6 +151,7 @@
                         on:input={handleInput}
                         bind:value={guestToFind}
                         placeholder="Name" 
+                        type="text"
                         class="w-full rounded-md border {findNameOnList ? 'focus:border-black/40 bg-zinc-100' : 'border-black/20 bg-white/20'} focus:outline-none focus:ring-0 transition-all duration-300"
                         />
                         
