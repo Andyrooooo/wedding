@@ -174,7 +174,7 @@
                         {/each}
                     </div> -->
 
-                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/40 flex flex-col h-48 overflow-y-scroll scrollbar-hide">
+                    <div class="absolute top-12 left-0 w-full {!findNameOnList ? 'hidden' : 'block'} bg-zinc-100 rounded-md border border-black/40 flex flex-col h-32 overflow-y-scroll scrollbar-hide">
                         {#if filteredGuestList.length === 0}
                             <div class="h-full w-full flex justify-center items-center">
                                 <p class="px-4 py-2 text-black/40">No Guests Found</p>
