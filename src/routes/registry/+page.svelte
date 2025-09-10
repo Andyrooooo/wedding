@@ -8,11 +8,13 @@
     let emVenmo: HTMLDivElement | null = null;
     let drewVenmo: HTMLDivElement | null = null;
     let zelleSection: HTMLDivElement | null = null;
+    let homeDeliverySection: HTMLDivElement | null = null;
     let zelleSectionRef: HTMLDivElement | null = null;
-        let introBlurbRef: HTMLDivElement | null = null;
+    let introBlurbRef: HTMLDivElement | null = null;
     let registrySectionRef: HTMLDivElement | null = null;
-        let emVenmoRef: HTMLDivElement | null = null;
+    let emVenmoRef: HTMLDivElement | null = null;
     let drewVenmoRef: HTMLDivElement | null = null;
+    let homeDeliverySectionRef: HTMLDivElement | null = null;
 
     function observeOnce(refGetter: () => HTMLElement | null, setter: (v: boolean) => void, threshold = 0.3) {
         let observer: IntersectionObserver;
@@ -41,7 +43,8 @@
             observeOnce(() => registrySectionRef, v => registrySection = v),
             observeOnce(() => emVenmoRef, v => emVenmo = v),
             observeOnce(() => drewVenmoRef, v => drewVenmo = v),
-            observeOnce(() => zelleSectionRef, v => zelleSection = v)
+            observeOnce(() => zelleSectionRef, v => zelleSection = v),
+            observeOnce(() => homeDeliverySectionRef, v => homeDeliverySection = v),
             // Add more: observeOnce(() => anotherRef, v => anotherVar = v)
         ];
         return () => cleanups.forEach(fn => fn());
@@ -87,7 +90,7 @@
         class:translate-y-0={registrySection}
         class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white transform opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
-                <i class="fa-solid fa-gift text-3xl"></i>
+                <i class="fa-solid fa-gift text-3xl text-rust"></i>
             </div>
 
             <h2 class="text-3xl font-proper font-bold mb-4 text-center">Registry</h2>
@@ -103,7 +106,7 @@
         class:translate-y-0={emVenmo}
         class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white transform opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
-                <i class="fa-solid fa-dollar-sign text-3xl"></i>
+                <i class="fa-solid fa-dollar-sign text-3xl text-rust"></i>
             </div>
 
             <h2 class="text-3xl font-proper font-bold mb-4 text-center">Emma's Venmo</h2>
@@ -119,7 +122,7 @@
         class:translate-y-0={drewVenmo}
         class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white transform opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
-                <i class="fa-solid fa-dollar-sign text-3xl"></i>
+                <i class="fa-solid fa-dollar-sign text-3xl text-rust"></i>
             </div>
 
             <h2 class="text-3xl font-proper font-bold mb-4 text-center">Drew's Venmo</h2>
@@ -135,12 +138,29 @@
         class:translate-y-0={zelleSection}
          class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white transform opacity-0 -translate-y-4 transition-all duration-700 delay-300">
             <div class="flex items-center justify-center mb-4">
-                <i class="fa-solid fa-dollar-sign text-3xl"></i>
+                <i class="fa-solid fa-dollar-sign text-3xl text-rust"></i>
             </div>
 
             <h2 class="text-3xl font-proper font-bold mb-4 text-center">Zelle</h2>
             <p class="text-white/60 mb-4">If your not able to use Venmo you can donate through Zelle:</p>
             <p class="text-white/60 mb-4">Zelle is sent through your banking app and you will send it to Emma's number: <a class="text-white font-bold">(714) 862-4760</a></p>
+            <div></div>
+        </div>
+
+
+        <div
+        bind:this={homeDeliverySectionRef}
+        class:opacity-100={homeDeliverySection}
+        class:translate-y-0={homeDeliverySection}
+         class="grid bg-black/40 rounded-md border border-white/20 p-4 text-white transform opacity-0 -translate-y-4 transition-all duration-700 delay-300">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fa-solid fa-house text-3xl text-rust"></i>
+            </div>
+
+            <h2 class="text-3xl font-proper font-bold mb-4 text-center">Home Delivery</h2>
+            <p class="text-white/60 mb-4">If you would like to send any presents to our home you may send it to this address:</p>
+            <p class="text-white font-bold text-center">2275 West 250 South, Apt H107</p>
+            <p class="mb-4 text-white font-bold text-center">Pleasant Grove, Utah 84062</p>
             <div></div>
         </div>
         
